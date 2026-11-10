@@ -34,14 +34,14 @@ senha incorreta, acesso bloqueado e link expirado.
 
 | ID no Figma | Tela | Exportação individual |
 |---|---|---|---|
-| `4:16` | LP-01 — Página inicial | [PNG](lp-01-pagina-inicial.png) |
-| `18:872` | AC-01 — Identificação por e-mail | [PNG](ac-01-identificacao-por-email.png) |
-| `21:988` | AC-02 — Login | [PNG](ac-02-login.png) |
-| `52:1830` | AC-02 — Senha incorreta | [PNG](ac-02-login-senha-incorreta.png) |
-| `52:1861` | AC-02 — Acesso bloqueado | [PNG](ac-02-login-acesso-bloqueado.png) |
-| `52:1759` | AC-03 — Link de recuperação enviado | — |
-| `52:1781` | AC-04 — Redefinição de senha | — |
-| `52:1811` | AC-04 — Link expirado | — |
+| `4:16` | LP-01 — Página inicial | [PNG](4-16-lp-01-pagina-inicial.png) |
+| `18:872` | AC-01 — Identificação por e-mail | [PNG](18-872-ac-01-identificacao-por-e-mail.png) |
+| `21:988` | AC-02 — Login | [PNG](21-988-ac-02-login.png) |
+| `52:1830` | AC-02 — Senha incorreta | [PNG](52-1830-ac-02-login-senha-incorreta.png) |
+| `52:1861` | AC-02 — Acesso bloqueado | [PNG](52-1861-ac-02-login-acesso-bloqueado.png) |
+| `52:1759` | AC-03 — Link de recuperação enviado | [PNG](52-1759-ac-03-link-de-recuperacao-enviado.png) |
+| `52:1781` | AC-04 — Redefinição de senha | [PNG](52-1781-ac-04-redefinicao-de-senha.png) |
+| `52:1811` | AC-04 — Link expirado | [PNG](52-1811-ac-04-link-expirado.png) |
 
 ## Siglas
 

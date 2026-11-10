@@ -8,10 +8,10 @@ telas.
 ## Cobertura observada
 
 - 10 jornadas, com 134 frames principais.
-- 19 frames/componentes na seção Componentes.
+- 13 frames e 6 símbolos reutilizáveis na seção Componentes.
 - 25 frames na seção Toasts e confirmações.
-- 12 exportações PNG de seção; cada uma reúne uma seção inteira e não um PNG por
-  frame.
+- 172 PNGs individuais dos frames, armazenados junto aos índices de cada seção.
+- 12 exportações PNG adicionais de seção, cada uma reunindo uma seção inteira.
 - 7 pontos de início configurados no protótipo.
 - Uma consulta às interações reportou ações de navegação em todas as seções
   (1.632 ações no total). Essa contagem comprova a existência de ligações, mas

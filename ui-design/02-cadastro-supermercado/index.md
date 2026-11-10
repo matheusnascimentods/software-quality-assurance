@@ -46,3 +46,5 @@ sequenceDiagram
 
 Veja a [seção no arquivo-fonte](../../index.fig) ou o
 [protótipo](https://www.figma.com/design/sucf2wudh5FRUMSHeWhfTi/SuperFor%C3%A7a-%E2%80%94-Telas-do-MVP?node-id=18-891).
+
+Os PNGs individuais estão nesta pasta e começam com o ID do nó no Figma.

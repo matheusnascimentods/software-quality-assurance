@@ -43,3 +43,5 @@ interpretar cada ação e seus próximos passos, consulte os índices das jornad
   de erros de rede, falhas de validação, repetição segura e estados de carregamento.
 
 Consulte a [seção no arquivo-fonte](../../index.fig).
+
+Os PNGs individuais estão nesta pasta e começam com o ID do nó no Figma.
