@@ -121,7 +121,7 @@ flowchart LR
     COMPANIES --> COMPANY_DETAIL["Detalhe da empresa"]
 ```
 
-O Figma também inclui telas de suporte para supermercado (SM-11) e profissional (TR-09), e uma área administrativa de chamados (AD-06), além de estados de bloqueio e reativação. Consulte a [análise de cobertura e lacunas](analise-figma.md) e o [protótipo](https://www.figma.com/design/sucf2wudh5FRUMSHeWhfTi/SuperFor%C3%A7a-%E2%80%94-Telas-do-MVP?node-id=0-1) para ver os frames e estados.
+O Figma também inclui telas de suporte para supermercado (SM-11) e profissional (TR-09), e uma área administrativa de chamados (AD-06), além de estados de bloqueio e reativação. Consulte o [protótipo](https://www.figma.com/design/sucf2wudh5FRUMSHeWhfTi/SuperFor%C3%A7a-%E2%80%94-Telas-do-MVP?node-id=0-1) para ver os frames e estados.
 
 ## 🎨 Identidade visual
 
@@ -150,7 +150,7 @@ O arquivo do Figma também agrupa componentes reutilizáveis — botões, campos
 ## 📁 Materiais do repositório
 
 O arquivo nativo do Figma está salvo como `index.fig`. Em `ui-design/` estão os
-172 PNGs individuais dos frames exportáveis, nomeados com o ID do nó do Figma,
+172 PNGs individuais dos frames exportáveis, nomeados como os próprios frames,
 além de 12 PNGs que mostram as seções completas. Cada pasta contém um índice
 com diagrama de sequência, siglas e descrição do fluxo. `componentes/` e
 `toasts-confirmacoes/` documentam elementos compartilhados sem tratá-los como
@@ -161,16 +161,15 @@ jornadas independentes.
 ├── index.fig
 ├── README.md
 ├── LICENSE
-├── analise-figma.md
 ├── canvas-superforca.md
 ├── pre-projeto.md
 └── ui-design/
     ├── 01-entrada-acesso/
     │   ├── index.md
     │   ├── entrada-acesso.png
-    │   ├── lp-01-pagina-inicial.png
-    │   ├── ac-01-identificacao-por-email.png
-    │   └── ac-02-*.png
+    │   ├── LP-01 · Página inicial.png
+    │   ├── AC-01 · Identificação por e-mail.png
+    │   └── AC-02 · Login.png
     ├── 02-cadastro-supermercado/
     ├── 03-publicar-preencher-vagas/
     ├── 04-historico-unidades/

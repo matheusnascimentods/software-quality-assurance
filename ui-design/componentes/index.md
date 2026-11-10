@@ -41,5 +41,5 @@ inativo, bloqueado, presença registrada e diferentes situações de vaga/servi�
 
 Consulte a [seção no arquivo-fonte](../../index.fig).
 
-Os PNGs individuais dos frames de componente estão nesta pasta e começam com o
-ID do nó no Figma. Os seis símbolos permanecem disponíveis no arquivo-fonte.
+Os PNGs individuais dos frames de componente estão nesta pasta e usam seus
+nomes exatos no Figma. Os seis símbolos permanecem disponíveis no arquivo-fonte.

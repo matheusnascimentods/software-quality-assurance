@@ -44,4 +44,4 @@ interpretar cada ação e seus próximos passos, consulte os índices das jornad
 
 Consulte a [seção no arquivo-fonte](../../index.fig).
 
-Os PNGs individuais estão nesta pasta e começam com o ID do nó no Figma.
+Os PNGs individuais desta pasta usam o nome exato de cada frame do Figma.
