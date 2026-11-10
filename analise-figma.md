@@ -46,7 +46,7 @@ telas.
 O Figma atual contempla AD-06 (chamados) e telas de suporte SM-11/TR-09, além de
 estados de bloqueio e reativação que não estavam descritos no README anterior.
 As telas de cada seção e suas siglas estão nos
-[índices em `telas/`](telas/).
+[índices em `ui-design/`](ui-design/).
 
 ## Limites desta revisão
 

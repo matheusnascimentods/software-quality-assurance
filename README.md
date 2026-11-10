@@ -31,7 +31,7 @@ Este repositório documenta o **design das interfaces no Figma**. Não contém a
 
 ## 🧭 Jornadas do MVP
 
-O arquivo atual do Figma reúne **134 frames em 10 jornadas**, além de 19 frames/componentes reutilizáveis e 25 frames de toasts e confirmações. O material está apresentado em desktop, com referência de 1280 px. Os diagramas abaixo resumem os caminhos principais; telas de erro, listas vazias, modais e menus abertos são estados alternativos das respectivas jornadas. Os índices em [`telas/`](telas/) detalham cada fluxo, suas siglas, estados e uma sequência de interação.
+O arquivo atual do Figma reúne **134 frames em 10 jornadas**, além de 19 frames/componentes reutilizáveis e 25 frames de toasts e confirmações. O material está apresentado em desktop, com referência de 1280 px. Os diagramas abaixo resumem os caminhos principais; telas de erro, listas vazias, modais e menus abertos são estados alternativos das respectivas jornadas. Os índices em [`ui-design/`](ui-design/) detalham cada fluxo, suas siglas, estados e uma sequência de interação.
 
 | # | Jornada | Principais etapas |
 |---|---|---|
@@ -149,10 +149,11 @@ O arquivo do Figma também agrupa componentes reutilizáveis — botões, campos
 
 ## 📁 Materiais do repositório
 
-O arquivo nativo do Figma está salvo como `index.fig`. O ZIP de origem fornece
-uma imagem PNG por seção (não por frame); cada pasta em `telas/` contém essa
-exportação e um `index.md` com diagrama de sequência, explicação das siglas e
-descrição das telas/estados. As pastas `componentes/` e
+O arquivo nativo do Figma está salvo como `index.fig`. As exportações de seção
+estão em `ui-design/`, junto aos índices com diagramas de sequência, siglas e
+descrições de telas/estados. Também há PNGs individuais dos frames do fluxo de
+entrada e acesso; as demais exportações individuais serão adicionadas conforme
+disponíveis. As pastas `componentes/` e
 `toasts-confirmacoes/` documentam elementos compartilhados sem tratá-los como
 jornadas independentes.
 
@@ -164,8 +165,13 @@ jornadas independentes.
 ├── analise-figma.md
 ├── canvas-superforca.md
 ├── pre-projeto.md
-└── telas/
+└── ui-design/
     ├── 01-entrada-acesso/
+    │   ├── index.md
+    │   ├── entrada-acesso.png
+    │   ├── lp-01-pagina-inicial.png
+    │   ├── ac-01-identificacao-por-email.png
+    │   └── ac-02-*.png
     ├── 02-cadastro-supermercado/
     ├── 03-publicar-preencher-vagas/
     ├── 04-historico-unidades/
