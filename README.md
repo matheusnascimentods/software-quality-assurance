@@ -31,7 +31,7 @@ Este repositório documenta o **design das interfaces no Figma**. Não contém a
 
 ## 🧭 Jornadas do MVP
 
-O arquivo atual do Figma organiza cerca de 70 frames desktop (1280 px) em **10 jornadas**, além da seção de componentes. Os diagramas abaixo resumem os caminhos principais; telas de erro, listas vazias, modais e menus abertos são estados alternativos das respectivas jornadas.
+O arquivo atual do Figma reúne **134 frames em 10 jornadas**, além de 19 frames/componentes reutilizáveis e 25 frames de toasts e confirmações. O material está apresentado em desktop, com referência de 1280 px. Os diagramas abaixo resumem os caminhos principais; telas de erro, listas vazias, modais e menus abertos são estados alternativos das respectivas jornadas. Os índices em [`telas/`](telas/) detalham cada fluxo, suas siglas, estados e uma sequência de interação.
 
 | # | Jornada | Principais etapas |
 |---|---|---|
@@ -44,7 +44,7 @@ O arquivo atual do Figma organiza cerca de 70 frames desktop (1280 px) em **10 j
 | 7 | **Profissional: encontrar vagas e se candidatar** | Oportunidades, filtros, detalhes e candidatura |
 | 8 | **Profissional: convites, serviços e histórico** | Convites, candidaturas, serviços confirmados e avaliações |
 | 9 | **Profissional: minha conta** | Perfil, disponibilidade, prévia para o supermercado e segurança |
-| 10 | **Administrador** | Gestão de usuários, empresas, vagas e serviços, avaliações e indicadores |
+| 10 | **Administrador** | Gestão de usuários, empresas, vagas e serviços, avaliações, indicadores e chamados |
 
 ### Acesso e cadastro
 
@@ -117,10 +117,11 @@ flowchart LR
     USERS --> JOBS["AD-03 · Vagas e serviços"]
     USERS --> REVIEWS["AD-04 · Avaliações"]
     USERS --> METRICS["AD-05 · Indicadores"]
+    USERS --> SUPPORT["AD-06 · Chamados"]
     COMPANIES --> COMPANY_DETAIL["Detalhe da empresa"]
 ```
 
-O Figma atual inclui, portanto, telas administrativas — uma atualização em relação ao resumo em PDF disponível nos materiais do projeto. Consulte o [protótipo](https://www.figma.com/design/sucf2wudh5FRUMSHeWhfTi/SuperFor%C3%A7a-%E2%80%94-Telas-do-MVP?node-id=0-1) para ver todos os frames e estados.
+O Figma também inclui telas de suporte para supermercado (SM-11) e profissional (TR-09), e uma área administrativa de chamados (AD-06), além de estados de bloqueio e reativação. Consulte a [análise de cobertura e lacunas](analise-figma.md) e o [protótipo](https://www.figma.com/design/sucf2wudh5FRUMSHeWhfTi/SuperFor%C3%A7a-%E2%80%94-Telas-do-MVP?node-id=0-1) para ver os frames e estados.
 
 ## 🎨 Identidade visual
 
@@ -141,43 +142,45 @@ O arquivo do Figma também agrupa componentes reutilizáveis — botões, campos
 
 ## 📌 Escopo e limites
 
-- O Figma atual também inclui telas de **administrador** (AD-01 a AD-05), embora elas não apareçam no resumo anterior em PDF.
+- O Figma atual também inclui telas de **administrador** (AD-01 a AD-06), embora elas não apareçam no resumo anterior em PDF.
 - As telas descritas estão em formato desktop, com largura de referência de 1280 px. Uma versão mobile não está definida no escopo documentado.
 - Pagamentos são realizados fora da plataforma no MVP.
 - O foco inicial é a cidade de São Paulo, com possibilidade de expansão posterior para a Grande São Paulo.
 
-## 📁 Estrutura-alvo do repositório
+## 📁 Materiais do repositório
 
-A árvore abaixo é uma **proposta de organização** para os materiais do projeto. No momento, este repositório contém apenas `README.md` e `LICENSE`; os arquivos listados como alvo ainda precisam ser exportados, convertidos ou adicionados.
-
-O arquivo nativo exportado do Figma usa a extensão `.fig`, então o nome sugerido é `index.fig`. Cada frame pode ser exportado como PNG para `telas/`, usando o identificador da tela no nome do arquivo. O PDF do Canvas e o pré-projeto em Markdown ficam na raiz.
+O arquivo nativo do Figma está salvo como `index.fig`. O ZIP de origem fornece
+uma imagem PNG por seção (não por frame); cada pasta em `telas/` contém essa
+exportação e um `index.md` com diagrama de sequência, explicação das siglas e
+descrição das telas/estados. As pastas `componentes/` e
+`toasts-confirmacoes/` documentam elementos compartilhados sem tratá-los como
+jornadas independentes.
 
 ```text
 .
 ├── index.fig
 ├── README.md
 ├── LICENSE
-├── canvas-superforca.pdf
+├── analise-figma.md
+├── canvas-superforca.md
 ├── pre-projeto.md
 └── telas/
-    ├── 01-LP-01-pagina-inicial.png
-    ├── 01-AC-01-identificacao-por-email.png
-    ├── 01-AC-02-login.png
-    ├── 02-CD-01-tipo-de-conta.png
-    ├── 02-CD-E1-dados-da-empresa.png
-    ├── 03-SM-01-painel-de-vagas.png
-    ├── 03-SM-02-publicar-vaga.png
-    ├── 04-SM-06-historico.png
-    ├── 05-SM-09-dados-da-empresa.png
-    ├── 06-CD-P1-dados-pessoais.png
-    ├── 06-CD-P4-disponibilidade.png
-    ├── 07-TR-02-oportunidades.png
-    ├── 08-TR-05-convites-recebidos.png
-    ├── 09-TR-01-perfil-e-disponibilidade.png
-    ├── 10-AD-01-usuarios.png
-    ├── 10-AD-05-indicadores.png
-    └── ... (demais telas e estados do Figma)
+    ├── 01-entrada-acesso/
+    ├── 02-cadastro-supermercado/
+    ├── 03-publicar-preencher-vagas/
+    ├── 04-historico-unidades/
+    ├── 05-conta-supermercado/
+    ├── 06-cadastro-profissional/
+    ├── 07-encontrar-vagas/
+    ├── 08-convites-servicos-historico/
+    ├── 09-conta-profissional/
+    ├── 10-administrador/
+    ├── componentes/
+    └── toasts-confirmacoes/
 ```
+
+Os índices de cada pasta são o ponto de entrada para a documentação daquele
+fluxo.
 
 ## 🎓 Contexto acadêmico
 
