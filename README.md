@@ -161,8 +161,9 @@ jornadas independentes.
 ├── index.fig
 ├── README.md
 ├── LICENSE
-├── canvas-superforca.md
-├── pre-projeto.md
+├── canvas.md
+├── pre-project.md
+├── notice.md
 └── ui-design/
     ├── 01-entrada-acesso/
     │   ├── index.md
@@ -185,6 +186,12 @@ jornadas independentes.
 
 Os índices de cada pasta são o ponto de entrada para a documentação daquele
 fluxo.
+
+| Documento | Conteúdo |
+|---|---|
+| [`canvas.md`](canvas.md) | Canvas Adaptado UC HUB do SuperForça |
+| [`pre-project.md`](pre-project.md) | Pré-projeto UC HUB: concorrentes, fluxos e funcionamento da solução |
+| [`notice.md`](notice.md) | Orientações da UC HUB: entregáveis, cronograma e regras de entrega |
 
 ## 🎓 Contexto acadêmico
 
