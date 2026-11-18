@@ -3,7 +3,7 @@
 ![Projeto acadêmico](https://img.shields.io/badge/Projeto-Acad%C3%AAmico-003e1f?style=for-the-badge)
 ![Figma](https://img.shields.io/badge/UI%2FUX-Figma-ffc300?style=for-the-badge&logo=figma&logoColor=111111)
 ![Escopo](https://img.shields.io/badge/Escopo-MVP-2a6f97?style=for-the-badge)
-![Frames](https://img.shields.io/badge/Frames-172-c1121f?style=for-the-badge)
+![Frames](https://img.shields.io/badge/Frames-173-c1121f?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 > Conectando supermercados a profissionais para demandas sazonais e emergenciais.
@@ -64,7 +64,7 @@ O SuperForça centraliza a publicação de oportunidades e a busca por profissio
 - **Compatibilidade multicritério**: função, qualificação, proximidade, disponibilidade e valor do serviço.
 - **Dois caminhos de contratação**: candidatura do profissional ou convite direto do supermercado.
 - **Avaliação nos dois sentidos**: supermercados avaliam profissionais e profissionais avaliam supermercados.
-- **Design documentado frame a frame**: 172 frames exportados em PNG, com índice por jornada contendo diagrama de sequência, siglas e estados.
+- **Design documentado frame a frame**: 173 frames exportados em PNG, com índice por jornada contendo diagrama de sequência, siglas e estados.
 
 ---
 
@@ -105,7 +105,7 @@ O SuperForça centraliza a publicação de oportunidades e a busca por profissio
 
 ## 🗺️ Telas & Jornadas
 
-O arquivo do Figma reúne **172 frames exportáveis**: 134 em 10 jornadas, 13 de componentes e 25 de toasts e confirmações. A seção de componentes também contém seis símbolos reutilizáveis. Cada frame tem um PNG individual em [`ui-design/`](ui-design/), além das exportações gerais por seção.
+O arquivo do Figma reúne **173 frames exportáveis**: 135 em 10 jornadas, 13 de componentes e 25 de toasts e confirmações. A seção de componentes também contém sete símbolos reutilizáveis. Cada frame tem um PNG individual em [`ui-design/`](ui-design/), além das exportações gerais por seção.
 
 | # | Jornada | Principais etapas |
 |---|---|---|
@@ -173,7 +173,8 @@ flowchart LR
     OPPORTUNITIES["TR-02 · Oportunidades"] --> FILTERS["TR-03 · Filtros"]
     FILTERS --> RESULTS["TR-02 · Resultados"]
     RESULTS --> JOB["TR-04 · Detalhes e candidatura"]
-    JOB -->|"Enviar candidatura"| APPLICATION["TR-06 · Minhas candidaturas"]
+    JOB -->|"Candidatar-se"| HIRING["TR-04 · Como funciona a contratação"]
+    HIRING -->|"Aceitar e candidatar-se"| APPLICATION["TR-06 · Minhas candidaturas"]
     INVITES["TR-05 · Convites recebidos"] -->|"Aceitar convite"| CONFIRMED["TR-06 · Serviços confirmados"]
     APPLICATION -->|"Selecionado"| CONFIRMED
     CONFIRMED --> DETAIL["TR-06 · Detalhe do serviço"]
@@ -247,7 +248,7 @@ software-quality-assurance/
 └── README.md
 ```
 
-Em `ui-design/` estão os 172 PNGs individuais dos frames exportáveis, além de 12 PNGs que mostram as seções completas.
+Em `ui-design/` estão os 173 PNGs individuais dos frames exportáveis, além de 12 PNGs que mostram as seções completas.
 
 ---
 
@@ -274,7 +275,7 @@ Em `ui-design/` estão os 172 PNGs individuais dos frames exportáveis, além de
 
 - **Somente design**: o repositório não contém a aplicação implementada nem código-fonte.
 - **Desktop**: as telas estão em formato desktop, com largura de referência de 1280 px; uma versão mobile não faz parte do escopo documentado.
-- **Pagamentos fora da plataforma**: no MVP, o valor do serviço é combinado e pago fora do SuperForça.
+- **Pagamentos fora da plataforma**: no MVP, o valor do serviço é combinado e pago fora do SuperForça. Antes da candidatura, o app mostra um aviso de pagamento e explica como funciona a contratação: o SuperForça não é o empregador, e o supermercado formaliza o serviço diretamente com o profissional.
 - **Atuação inicial em São Paulo**: o foco é a cidade de São Paulo, com possibilidade de expansão posterior para a Grande São Paulo.
 - **Hipóteses a validar**: o fluxo atual de contratação descrito no pré-projeto é uma proposta a confirmar em entrevistas com supermercados.
 

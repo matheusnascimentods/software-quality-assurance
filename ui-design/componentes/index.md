@@ -21,11 +21,11 @@ sequenceDiagram
 
 ## Elementos
 
-13 frames de componente e seis símbolos reutilizáveis de seção incluem botões,
+13 frames de componente e sete símbolos reutilizáveis de seção incluem botões,
 selos e dropdowns de status,
 etiquetas, chips de filtro, abas, cabeçalhos, linhas de vaga, campos de
 formulário, cards de profissional/unidade/oportunidade, controle de presença,
-progresso de cadastro, chave e toast.
+progresso de cadastro, chave, toast e aviso informativo.
 
 O cabeçalho administrativo e o cabeçalho do profissional têm variantes próprias.
 Os componentes usam estados como primário, negativo, desabilitado, ativo,
@@ -42,4 +42,4 @@ inativo, bloqueado, presença registrada e diferentes situações de vaga/servi�
 Consulte a [seção no arquivo-fonte](../../index.fig).
 
 Os PNGs individuais dos frames de componente estão nesta pasta e usam seus
-nomes exatos no Figma. Os seis símbolos permanecem disponíveis no arquivo-fonte.
+nomes exatos no Figma. Os sete símbolos permanecem disponíveis no arquivo-fonte.
